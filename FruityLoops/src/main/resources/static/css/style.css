@@ -1,0 +1,29 @@
+.container {
+	width: 750px;
+	height: 450px;
+	background-color: pink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	  margin: 0 auto;
+
+}
+
+h1 {
+	color: #ef8080;
+	margin-left: 400px;
+}
+
+table {
+  width: 660px;
+  height: 390px;
+  border: 2px solid;
+  padding: 30px;
+  background-color: white;
+  
+}
+
+.tr {
+	border-bottom: 1px solid pink;
+}
+
