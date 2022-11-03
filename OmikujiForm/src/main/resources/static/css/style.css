@@ -1,0 +1,26 @@
+h1 {
+	margin-left: 660px;
+}
+
+.container {
+	height: 100%;
+	width: 30%;
+	margin: 0 auto;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+}
+
+.form {
+font-size: larger;
+padding: 20px;
+
+
+}
+
+.button {
+	background-color: #597eaa;
+	margin-left: 150px;
+	color: white;
+	box-shadow: 2px 2px black;
+}
