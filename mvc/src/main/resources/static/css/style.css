@@ -1,0 +1,13 @@
+table {
+	border: 2px solid black;
+	width: 50%;
+	height: 40%;
+	
+}
+.tr {
+		border: 2px solid black;
+		background-color: #cccccc;
+}
+tr {
+	height: 30px;
+}
