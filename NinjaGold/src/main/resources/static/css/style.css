@@ -1,0 +1,33 @@
+
+.input {
+    width: 100px;
+}
+.forms {
+    display: flex;
+    justify-content: space-between;
+    width : 80%;
+    height:300px;
+    margin-left: 10%;
+    border: 1px solid white;
+}
+
+.form{
+    border: 2px solid black;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+}
+.address{
+  margin-left: 10%;
+}
+.text{
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+.log{
+    width:80%;
+    height: 120px;
+    margin-left: 10%;
+    border: 1px solid black;
+}
