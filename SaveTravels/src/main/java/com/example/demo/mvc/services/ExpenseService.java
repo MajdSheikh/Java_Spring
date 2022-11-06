@@ -39,21 +39,17 @@ public class ExpenseService {
     
     
     //update a certain expense (that we get by its id), it takes 
-    public Expense updateExpense(Long id, String name, String vendor, Integer amount , String description) {
-    	Optional<Expense> optionalExpense = expenseRepository.findById(id);
-    	if(optionalExpense.isPresent()) {
-    		Expense expense = optionalExpense.get();
-    		expense.setName(name);
-    		expense.setVendor(vendor);
-    		expense.setDescription(description);
-    		expense.setAmount(amount);
-    		return expenseRepository.save(expense);
-    	}
-    	else {
+    public Expense updateExpense(Long id,Expense expense) {
+    	Expense updated =findExpense(id);
+    	updated.setAmount(expense.getAmount());
+    	updated.setDescription(expense.getDescription());
+    	updated.setName(expense.getName());
+    	updated.setVendor(expense.getVendor());
+    	expenseRepository.save(updated);
     		return null;
     	}
     	
-    }
+    
     
     // delete expense by its id
     public void deleteExpense(Long id) {

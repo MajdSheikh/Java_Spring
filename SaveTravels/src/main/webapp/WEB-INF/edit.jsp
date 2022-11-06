@@ -12,38 +12,15 @@
 </head>
 <body>
 
-
-<h1>Save Travels</h1>
-<table>
-    <thead>
-        <tr>
-            <th>Expense</th>
-            <th>Vendor</th>
-            <th>Amount</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-         <c:forEach var="expense" items="${expenses}"> 
-			<tr>
-				<td><c:out value="${expense.name}"/></td>
-				<td><c:out value="${expense.vendor}"/></td>
-				<td><c:out value="${expense.amount}"/></td>
-				<td><a href="/expenses/edit/<c:out value="${expense.id}"/>">Edit</a></td>
-				
-			</tr>
-		</c:forEach>
-    </tbody>
-</table>
-
-
 <div>
 
-<h1>Add an expense</h1>
+<h1>Edit Expense</h1>
 
 
 
-<form:form action="/expenses" method="post" modelAttribute="expense">
+<form:form action="/expenses/${expense.id}" method="post" modelAttribute="expense">
+<input type="hidden" name="_method" value="put">
+
     <p>
         <form:label path="name">Expense Name: </form:label>
         <form:errors path="name"/>
@@ -74,6 +51,7 @@
 </form:form>
 
 </div>
+
 
 </body>
 </html>
