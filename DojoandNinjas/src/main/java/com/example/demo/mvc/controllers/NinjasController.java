@@ -43,13 +43,13 @@ public class NinjasController {
     }
 	
 	@PostMapping("/ninjas/new")
-	public String create(@Valid @ModelAttribute("ninjas") Ninjas ninjas, BindingResult result, Model model) {
+	public String create(@Valid @ModelAttribute("ninja") Ninjas ninja, BindingResult result, Model model) {
 	   if (result.hasErrors()) {
 		   model.addAttribute("dojo", dojoService.allDojos());
 	       return "ninjasIndex.jsp";
 	   } 
 	   else {
-	       ninjasService.createNinjas(ninjas);
+	       ninjasService.createNinjas(ninja);
 	       return "redirect:/ninjas/new";
 	     }
 	 }
