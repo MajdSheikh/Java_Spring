@@ -1,0 +1,22 @@
+h1 {
+	text-align: center;
+}
+.border {
+	border-bottom: 2px solid black;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+table {
+	width: 90%;
+	border: 2px solid black;
+	margin: 0 auto;
+}
+tr {
+	border: 2px solid black;
+}
+
+td {
+	border: 2px solid black;
+}
