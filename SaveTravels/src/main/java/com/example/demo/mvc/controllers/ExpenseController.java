@@ -27,7 +27,7 @@ public class ExpenseController {
 	}
 	 
 	 @GetMapping("/expenses")
-	    public String newBook(@ModelAttribute("expense") Expense expense, Model model) {
+	    public String newExpense(@ModelAttribute("expense") Expense expense, Model model) {
 		 model.addAttribute("expenses", expenseService.allExpenses());
 	        return "index.jsp";
 	    }
@@ -52,7 +52,7 @@ public class ExpenseController {
 	    
 	    
 	    @PutMapping("/expenses/{id}")
-	    public String update(@Valid @ModelAttribute("expenses") Expense expense,@PathVariable("id") Long id, BindingResult result) {
+	    public String update(@Valid @ModelAttribute("expense") Expense expense,@PathVariable("id") Long id, BindingResult result) {
 	        if (result.hasErrors()) {
 	            return "edit.jsp";
 	        } else {
