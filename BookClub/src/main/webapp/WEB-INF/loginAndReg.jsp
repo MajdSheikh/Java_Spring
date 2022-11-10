@@ -1,0 +1,94 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page isErrorPage="true" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>register and login</title>
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+
+<div class="div">
+<h1 class="bookClub">Book Club</h1>
+<h3>A place for friends to share thoughts on books</h3>
+</div>
+
+
+<div class="container">
+
+<div class="registration">
+<h1>Register</h1>
+
+<form:form action="/register" method="post" modelAttribute="newUser">
+
+<div class="log">
+        <form:label path="userName"> User Name: </form:label>
+        <form:errors path="userName"/>
+        <form:input path="userName" class="input"/>
+</div>
+
+<div class="log">
+        <form:label path="email"> Email: </form:label>
+        <form:errors path="email"/>
+        <form:input path="email"/>
+</div>
+
+<div class="log">
+        <form:label path="password"> Password: </form:label>
+        <form:errors path="password"/>
+        <form:input path="password"/>
+</div>
+
+<div class="log">
+        <form:label path="confirm"> Confirm PW: </form:label>
+        <form:errors path="confirm"/>
+        <form:input path="confirm"/>
+</div>
+
+<div class="log">
+    <input type="submit" value="submit" class="button"/>
+</div>
+
+</form:form>
+</div>
+
+
+
+<div class="login">
+
+<h1>Log in</h1>
+
+<form:form action="/login" method="post" modelAttribute="newLogin">
+
+
+
+<div class="log">
+        <form:label path="email"> Email: </form:label>
+        <form:errors path="email"/>
+        <form:input path="email"/>
+</div>
+
+<div class="log">
+        <form:label path="password"> Password: </form:label>
+        <form:errors path="password"/>
+        <form:input path="password"/>
+</div>
+
+
+<div class="log">
+    <input type="submit" value="submit" class="button"/>
+</div>
+
+</form:form>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

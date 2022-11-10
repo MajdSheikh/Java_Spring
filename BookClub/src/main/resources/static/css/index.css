@@ -1,0 +1,66 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+}
+.log {
+	margin-bottom: 30px;
+}
+
+.bookClub {
+	color: #9900ff;
+}
+
+.div {
+	margin-left: 250px;
+}
+
+.button {
+	background-color: white;
+	margin-left: 120px;
+	width: 80px;
+	box-shadow: 2px 2px black; 
+	font-weight: bolder;
+}
+
+.successContainer {
+	margin-left: 40px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.divv {
+	margin: 30xp;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+tr:hover {background-color: #D6EEEE;}
+
+.head {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+.divvv {
+	margin-left: 30px;
+}
+
+.bord {
+	border-bottom: 2px solid black;
+	width: 60%;
+}
+
+

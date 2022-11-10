@@ -52,7 +52,8 @@ public class ExpenseController {
 	    
 	    
 	    @PutMapping("/expenses/{id}")
-	    public String update(@Valid @ModelAttribute("expense") Expense expense,@PathVariable("id") Long id, BindingResult result) {
+	    public String update(@Valid @ModelAttribute("expense") Expense expense,
+	    		@PathVariable("id") Long id, BindingResult result) {
 	        if (result.hasErrors()) {
 	            return "edit.jsp";
 	        } else {

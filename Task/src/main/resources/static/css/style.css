@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+
+th{
+	background-color: cyan;
+}
+
+td{
+	background-color: light gray;
+}
+
+table{
+	outline: 1px solid black;
+}
+
+span{
+	font-weight: bold;
+}
